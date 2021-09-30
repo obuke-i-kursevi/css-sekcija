@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8. čas - Basics of CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style> 
+        h2 {
+           color: #B75844;
+        }
+    </style>
+</head>
+<body>
+    <div class="my-div">
+        <!-- ! 1. način -->
+        <h1 style="color: blue; font-size: 50px">Welcome to our Programming School</h1> <!-- ! loš način pisanja CSS-a -->
+
+        <!-- ! 2. način -->
+        <h2>Another way of applying CSS</h2>
+        
+        <!-- ! 3. način -->
+        <h3>Third way of applying CSS</h3>
+
+        <h1 class="my-h1">Testing class selectors</h1>
+
+        <h1 class="my-h1">Another Test for Class Selectors</h1>
+
+        <button disabled>Click Me</button>
+
+        <!-- ! Selector Types -->
+        <h1>Selector Types:</h1>
+
+        <ol id="selector-types">
+            <li>Element Selector ( h3 { color: blue } )</li>
+            <li>Class Selector ( .neka-klasa { color: red } )</li>
+            <li>Universal Selector ( * { background-color: red } )</li>
+            <li>ID Selector ( #neki-id { color: green } )</li>
+            <li>Attribute Selector ( [disabled] { color: red } )</li>
+        </ol>
+
+        <!-- ! Levels of Specificity (Hierarchy) -->
+
+        <ol>
+            <li>Element Selectors (h1, p, h3, img) and pseudo-elements (::after, ::before)</li>
+            <li>Class Selectors (.neka-klas), pseudo-klase (:pseudo-class) i Attribute Selectors</li>
+            <li>ID Selectors (#neki-id) </li>
+            <li>Inline CSS styles (h1 color: red) <strong>Izbegavati!!!</strong> </li>
+        </ol>
+
+        <p class="my-paragraph" id="id-paragraph">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque consectetur possimus nulla ipsam suscipit architecto commodi 
+            temporibus reiciendis dolore, iusto et dolorem, molestias repellat laudantium velit rem consequatur libero nisi?
+        </p>
+
+        <!-- ! Combinators -->
+
+        <h4>First h4 element</h4>
+        <h4>Second h4 element</h4>
+        <h4 class="my-h4">Third h4 element</h4>
+
+        <!-- ! Combinator Types -->
+
+    </div>
+</body>
+</html>

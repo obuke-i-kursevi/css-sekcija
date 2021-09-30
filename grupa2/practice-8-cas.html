@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8. čas - Basics of CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h2 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="my-div">
+        <!-- ! 1. nacin primene CSS stilova -->
+        <h1 style="color: red">First => h1 element</h1> <!--! los nacin pisanja CSS-a-->
+
+        <!-- ! 2. nacin primene CSS stilova kroz <style> tag u <header> tag-u -->
+        <h2>Second => h2 element</h2>
+
+        <!-- ! 3. nacin primene CSS stilova kroz eksterni .css fajl -->
+        <h3>Third => h3 element</h3>
+
+        <h1 class="my-class">Demonstration of class selector</h1>
+
+        <h1 id="my-id">Demonstration of ID selector</h1>
+
+        <button disabled>Click Me</button>
+
+        <p class="lorem-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nisi doloribus corporis eveniet voluptatum. 
+            Totam eligendi, saepe voluptatum illo assumenda.
+        </p>
+
+        <h1>CSS Selectors:</h1>
+        <ol>
+            <li>Element Selectors (h3 {color: blue})</li>
+            <li>Class Selectors (.neka-klasa {color: red})</li>
+            <li>Universal Selectors (*{color: green})</li>
+            <li>ID Selectors (#neki-id{color: yellow})</li>
+            <li>Attribute Selectors ([disabled] {color: red})</li>
+        </ol>
+
+        <h1>Specificity (Hijerarhija) of CSS implementation</h1>
+        <ol>
+            <li>Element Selectors (h1, h3, p, img) and pseudo-elements(::after, ::before)</li>
+            <li>
+                Class Selectors (.moja-klas), pseudo klase and attribute selectors([disabled]). 
+                U slucaju da su oba aplicirana, primenjuje selectors poslednji dodat.
+            </li>
+            <li>ID Selectors(#moj-id)</li>
+            <li>Inline-Style Tag (h1 color: red)</li>
+        </ol>
+
+        <p style="color: black" class="my-paragraph" id="paragraph-id">
+            Ovo je nas test specificity paragraf!!!
+        </p>
+
+        <h5 id="my-h5">Ovo je h5 element, koji se nalazi u div elementu.</h5>
+
+        <hr>
+        <hr>
+
+        <!-- * Za objasnjavanje Descendent Combinator-a -->
+        <div class="my-container">
+            <h5>Ugnjezden sam u my-container div</h5>
+            <h5>Drugi</h5>
+            <p>Neki kratki paragraf</p>
+            <h5>Treci</h5>
+            <div>
+                <h5>Cetvrti</h5>
+            </div>
+            <h2>H2 element</h2>
+        </div>
+
+        <hr>
+        <hr>
+
+        <!-- * Za objasnjavanje Adjacent Sibling Combinator-a -->
+        <div class="second-div">
+            <h2>H2 element</h2>
+            <p>CSS applied</p>
+            <h2>H2 element</h2>
+            <h3>H3 element</h3>
+            <p>CSS NOT applied</p>
+            <h2>H2 element</h2>
+            <p>CSS applied</p>
+        </div>
+
+        <hr>
+        <hr>
+
+        <!-- * Za objasnjavanje Adjacent Sibling Combinator-a -->
+        <div class="third-div">
+            <h2>H2 element</h2>
+            <p>CSS applied</p>
+            <h2>H2 element</h2>
+            <h3>H3 element</h3>
+            <p>CSS applied</p>
+            <h2>H2 element</h2>
+            <p>CSS applied</p>
+        </div>
+
+        <hr>
+        <hr>
+
+        <!-- * Za objasnjavanje Child Combinator-a -->
+        <div class="forth-div">
+            <div>Not applied</div>
+            <p>CSS applied</p>
+            <div>Not applied</div>
+            <article>
+                <p>Not applied</p>
+            </article>
+            <p>CSS applied</p>
+        </div>
+
+        <h1>Combinator Types:</h1>
+        <ul>
+            Descendent Combinator (.moja-klasa h1 {color: red})
+            Adjacent Sibling Combinator (h2 + p {color: blue})
+            General Sibling Combinator (h2 ~ p {color: green})
+            Child Combinator (.forth-div > p {color: yellow})
+        </ul>
+
+    </div>
+</body>
+</html>

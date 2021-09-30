@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap');
+
+/* Universal Selector */
+* {
+    background-color: #DBC9A6;
+}
+
+/* Element Selector */
+h3 {
+    color: #0DA818;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+/* Class Selector */
+.my-class {
+    color: rgb(91, 91, 197);
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 30px;
+}
+
+/* ID Selector */
+#my-id {
+    color: #158728;
+    font-size: 40px;
+}
+
+/* Attibute Selector */
+[disabled] {
+    color: red;
+    font-size: 25px;
+    background-color: beige;
+}
+
+p {
+    color: red;
+    font-size: 20px;
+}
+
+.my-paragraph {
+    color: blue;
+}
+
+#paragraph-id {
+   color: #158728; 
+}
+
+/* .my-div {
+    background-color: white;
+} */
+
+/* Combinator */
+.my-div .lorem-text {
+    color: rgb(91, 91, 197);
+}
+
+#my-h5 {
+    color: blue;
+}
+
+.my-div h5 {
+    color: red;
+    font-size: 28px;
+}
+
+.my-div .my-container h5 {
+    color: green;
+}
+
+h2+p {
+    color: purple;
+    font-weight: bold;
+}
+
+.third-div h2~p {
+    color: #dd3300;
+    font-weight: bold;
+}
+
+.forth-div>p {
+    color:rgb(38, 38, 63)
+}
