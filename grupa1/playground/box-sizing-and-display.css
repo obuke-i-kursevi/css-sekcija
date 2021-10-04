@@ -1,0 +1,74 @@
+/* ! 9. cas - box sizing */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.hero-overview {
+    padding: 20px;
+    border: 1px solid black;
+    margin: 15px;
+    width: 50%;
+    height: 250px;
+}
+
+.hero-overview h1 {
+    width: 200px;
+}
+
+.content-box {
+    box-sizing: content-box; 
+    width: 500px;
+    height: 100px;
+    padding: 25px;
+    margin: 10px;
+    border: 2px solid red;
+    background-color: rgb(240, 217, 217);
+}
+
+.border-box {
+    /* box-sizing: border-box; */
+    width: 500px;
+    height: 100px;
+    padding: 25px;
+    border: 2px solid green;
+    background-color: rgb(207, 231, 207);
+}
+
+.block-element {
+    display: block;
+    border: 1px solid blue;
+    margin: 15px;
+    width: 200px;
+    height: 50px;
+}
+
+.inline-element {
+    display: inline;
+    border: 1px solid orange;
+    width: 200px;
+    height: 200px;
+}
+
+.inline-block-element {
+    display: inline-block;
+    border: 1px solid green;
+    height: 50px;
+    width: 200px;
+    margin: 15px; /* ! Shorthand */
+    /* margin: 50px 40px 35px 80px; */
+    /* margin: 50px 100px; */
+    /* margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    margin-right: 50px; */
+}
+
+.not-shown {
+    /* display: none; */
+    visibility: hidden;
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Source+Code+Pro&display=swap');
+/* 
+font-family: 'Courier Prime', monospace;
+font-family: 'Source Code Pro', monospace;
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fef9f8;
+}
