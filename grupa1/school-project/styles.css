@@ -12,3 +12,77 @@ body {
     margin: 0;
     background-color: #fef9f8;
 }
+
+.main-header {
+    border-top: 10px solid #ef9273;
+    background: #fef9f8;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 5px solid white;
+}
+
+.main-header .main-header__logo {
+    display: inline-block;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
+.main-header__logo a {
+    color: #0d0d0d;
+    text-decoration: none;
+}
+
+.main-header .main-nav {
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    width: calc(100% - 140px);
+}
+
+.main-nav__items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav__item {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.main-nav__item a {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+    color: #0d0d0d;
+    text-decoration: none;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.li-first {
+    margin-right: 25px;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: #fef9f8;
+    background: #ef9273;
+    border-radius: 40px;
+}
+
+.hero-wrapper {
+    /* height: 500px; */
+    /* border: 1px solid red; */
+    /* margin: 15px; */
+    /* background-color: #7c544d; */
+    padding: 20px;
+    font-family: 'Courier Prime', monospace;
+    width: 100%;
+    height: 50vh;
+    background-image: url('./assets/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

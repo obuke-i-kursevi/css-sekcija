@@ -1,0 +1,15 @@
+/* .test-div {
+    margin: 100px !important;
+} */
+
+.second-class {
+    margin: 150px;
+}
+
+.test-links {
+    margin-top: 50px;
+}
+
+.test-links a:not(.active) {
+    color: red;
+}

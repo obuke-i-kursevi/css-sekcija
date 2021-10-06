@@ -1,0 +1,16 @@
+.prva-klasa {
+    background-color: rgb(159, 228, 206) !important;
+}
+
+.druga-klasa {
+    background-color: yellow;
+}
+
+.not-pseudo-class-practice {
+    margin-top: 30px;
+}
+
+.not-pseudo-class-practice a:not(.active) {
+    color: red;
+    font-size: 15px;
+}
