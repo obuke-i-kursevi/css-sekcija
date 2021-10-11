@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-wrapper div {
+    border: 1px solid black;
+    padding: 20px;
+    /* height: 200px;
+    width: 400px; */
+    /* margin-right: 20px; */ /* ! los pristup ako se koristi flex */
+}
+
+.main-wrapper {
+    /* ! u slucaju kada je flex-direction: row (row-reverse) */
+    /* height: 100vh; */
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center; */
+
+    /* ! u slucaju kada je flex-direction: column (column-reverse) */
+    height: 100vh;
+    display: flex;
+    /* flex-flow: row wrap; */ /* ? shorthand za flex-direction i flex-wrap*/
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.box-num-1 {
+    /* flex: 1 0 300px; */ /* ? shorthand za flex-grow, flex-shrink i flex-basis*/
+    flex-basis: 200px;
+    align-self: flex-start;
+    /* flex-shrink: 1; */
+    /* flex-grow: 1;
+    order: 3; */
+}
+
+.box-num-2 {
+    flex-basis: 200px;
+    align-self: center;
+    /* order: 2;
+    flex-grow: 2; */
+}
+
+.box-num-3 {
+    flex-basis: 200px;
+    /* order: 1;
+    flex-grow: 1; */
+}
