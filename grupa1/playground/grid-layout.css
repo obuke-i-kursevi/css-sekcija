@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.main-grid-wrapper {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    /* * podesavanje visine reda */
+    grid-template-rows: 300px 200px;
+    /* * podesavanje sirine i samim tim broja redova */
+
+    /* grid-template-columns: 200px 400px 250px; */
+    /* grid-template-columns: repeat(3, 300px); */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    /* grid-column-gap: 25px;
+    grid-row-gap: 50px; */
+    grid-gap: 50px 25px;
+    grid-auto-rows: 200px;
+}
+
+.box {
+    background: rgb(199, 231, 199);
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.box:nth-child(even) {
+    background:rgb(131, 180, 131);
+}
+
+.box-5 {
+    /* grid-column: span 3; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
