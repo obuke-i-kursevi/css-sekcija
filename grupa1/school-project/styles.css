@@ -40,6 +40,11 @@ body {
     text-decoration: none;
 }
 
+.main-header__logo a img {
+    width: 60px;
+    height: 60px;
+}
+
  /*.main-header .main-nav {
     display: inline-block;
     width: calc(100% - 140px);
@@ -65,6 +70,11 @@ body {
     white-space: nowrap; 
 } */
 
+.main-nav__item:nth-child(1),
+.main-nav__item:nth-child(2) {
+    margin-right: 25px;
+}
+
 .main-nav__item a {
     font-family: 'Source Code Pro', monospace;
     font-size: 25px;
@@ -84,6 +94,7 @@ body {
     color: #fef9f8;
     background: #ef9273;
     border-radius: 40px;
+    transition: 0.3s ease; /* tranzicija elementa iz jednog u drugo stanje */
 }
 
 .hero-wrapper {
@@ -94,7 +105,7 @@ body {
     padding: 20px;
     font-family: 'Courier Prime', monospace;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     background-image: url('./assets/hero-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,6 +127,8 @@ body {
     flex-basis: 100%;
     font-family: 'Courier Prime', monospace;
     font-size: 45px;
+    letter-spacing: 5px; /* dodaje razmak izmedju slova */
+    text-shadow: 3px 3px #eb9a7f; /* dodaje senku iza svakog slova nekog teksta */
 }
 
 .plans-wrapper .plans-wrapper__article {
@@ -130,6 +143,7 @@ body {
     border-radius: 25px;
     border: 3px solid black;
     margin-bottom: 20px;
+    box-shadow: 5px 4px 5px 5px rgba(0, 0, 0, 0.5); /* dodaje senku iza box-a (moze i ka unutra uz inset) */
 }
 
 .advanced { 
@@ -146,13 +160,17 @@ body {
 .plans-wrapper__article h1:nth-child(1) {
     font-family: 'Courier Prime', monospace;
     font-weight: bolder;
-    font-size: 35px; 
+    font-size: 35px;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px #ddd7d6; 
 }
 
 .plans-wrapper__article h1:nth-child(2) {
     font-family: 'Courier Prime', monospace;
     font-weight: bold;
     font-size: 28px;
+    text-shadow: 3px 3px #ddd7d6; 
+    letter-spacing: 3px; 
     text-decoration: underline;
     text-align: center;
     text-underline-offset: 5px; /* definise razmak izmedju teksta i underline-a */
@@ -160,12 +178,14 @@ body {
 
 .plans-wrapper__article h2 {
     font-family: 'Courier Prime', monospace;
+    text-shadow: 3px 3px 3px #ddd7d6; 
 }
 
 .plans-wrapper__article h3 {
     font-family: 'Courier Prime', monospace;
     text-align: center;
     font-size: 23px;
+    text-shadow: 3px 3px 3px #ddd7d6; 
 }
 
 .plans-wrapper__article ul {
@@ -177,6 +197,7 @@ body {
     font-family: 'Source Code Pro', monospace;
     font-size: 19px;
     font-weight: bold;
+    text-shadow: 1px 1px 3px #ddd7d6; 
 }
 
 .choose-plan__button {
@@ -196,4 +217,114 @@ body {
     cursor: pointer;
     background: #ddd7d6;
     transition: 0.3s ease; /* vreme i nacin implementacije tranzicije na hover dugmeta */
+}
+
+
+/* ! About Section */
+.about-wrapper {
+    margin-top: 100px;
+    padding: 50px 0;
+    background: #eb9a7f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-wrapper__title {
+    text-align: center;
+    flex-basis: 100%;
+    font-family: 'Courier Prime', monospace;
+    font-size: 45px;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 3px #ddd7d6;
+}
+
+.about-wrapper__text {
+    width: 30%;
+}
+
+.about-wrapper__text p {
+    font-family: 'Courier Prime', monospace;
+    text-align: center;
+    font-size: 22px;
+    text-shadow: 1px 1px 3px #ddd7;
+}
+
+.about-wrapper__founders {
+    width: 60%;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-wrapper__founders-card {
+    width: 550px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-wrapper__founders-card img {
+    border: 3px solid #ddd7d6;
+    border-radius: 50px;
+    box-shadow: 5px 4px 5px 5px rgba(0,0,0,0.5);
+}
+
+.about-wrapper__founders-card h1 {
+    font-size: 35px;
+    text-shadow: 3px 3px 3px #ddd7d6;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.about-wrapper__founders-card h3 {
+    font-size: 25px;
+    text-shadow: 3px 3px 3px #ddd7d6;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.about-wrapper__founders-card p {
+    font-family: 'Courier Prime', monospace;
+    padding: 25px;
+    width: 75%;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 2px 2px 3px #ddd7d6;
+}
+
+/* ! Footer section */
+.main-footer {
+    background-color: #fef9f8;
+    border-top: 3px solid white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-footer__nav {
+    width: 20%;
+}
+
+.main-footer__list {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.main-footer__list li a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.main-footer__list li a:hover {
+    cursor: pointer;
 }
