@@ -1,0 +1,63 @@
+body {
+    /*  overflow: hidden; sakriva i vertikalni i horizontalni scrollbar */
+}
+
+.first-div {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.first-div h1 {
+    position: static; /* 1. */
+}
+
+.second-div {
+    border: 1px solid red;
+    width: 500px;
+    height: 500px;
+    background: rgb(235, 234, 234);
+    margin: 0 auto;
+    position: relative;
+    /* overflow: hidden; */ /* ovde sakriva delove elemenata koji idu van okvira parent elementa */
+}
+
+.second-div .box-1 {
+    border: 1px solid black;
+    background: rgb(224, 198, 198);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    /* top: 0;
+    right: 40px;
+    position: relative; */
+
+}
+
+.second-div .box-2 {
+    border: 1px solid black;
+    background: rgb(217, 231, 203);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 10px;
+    left: 15px;
+    /* top: -20px;
+    left: 50px;
+    position: relative; */
+    /* 
+        top;
+        left;
+        bottom;
+        right;
+    */
+}
+
+nav {
+    position: sticky;
+    top: 10px;
+    color: red;
+    font-weight: bolder;
+}
