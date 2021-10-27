@@ -328,3 +328,26 @@ body {
 .main-footer__list li a:hover {
     cursor: pointer;
 }
+
+/* ! Media Upiti */
+@media screen and (max-width: 768px) {
+    .about-wrapper__text {
+        width: 80%;
+    }
+    .about-wrapper__text p {
+        font-size: 1em;
+    }
+    .about-wrapper__founders {
+        text-align: center;
+    }
+    .about-wrapper__founders-card img {
+        width: 300px;
+        height: 300px;
+    }
+    .main-footer__nav {
+        width: 100%;
+    }
+    .main-footer__list {
+        padding: 0;
+    }
+}

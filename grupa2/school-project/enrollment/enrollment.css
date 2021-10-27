@@ -97,3 +97,12 @@ select:focus,
 input:focus{
     outline: none;
 }
+
+@media screen and (max-width: 768px) {
+    .form-wrapper__form {
+        width: 80%;
+    }
+    .form-wrapper__form h3 {
+        text-align: center;
+    }
+}

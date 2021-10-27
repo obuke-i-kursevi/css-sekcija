@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Zen+Kurenaido&display=swap');
+
+/* 
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Zen Kurenaido', sans-serif;   
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.hero-wrapper {
+    background-image: url('../assets/test-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Zen Kurenaido', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-part h1 {
+    font-size: 3.5em;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+.about-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    margin-top: 20px;
+    width: 50%;
+    min-width: 300px;
+    padding: 20px 30px;
+    text-align: center;
+    background: rgb(231, 224, 211);
+}
+
+.about-part p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.about-part button {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 1.2em;
+    background:rgb(209, 178, 121);
+}
+
+@media screen and (max-width: 768px) {
+    .hero-wrapper {
+        background-image: none;
+        background:rgb(139, 133, 121);
+    }
+    .about-part {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .title-part h1 {
+        font-family: 'Roboto Mono', monospace;
+        color: red;
+    }
+}
