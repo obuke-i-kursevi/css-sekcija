@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css-basics.css">
+    <style>
+        h2 {
+            color: #B76888;
+            font-size: 45px;
+        }
+    </style>
+    <title>8. cas - Basics of CSS</title>
+</head>
+<body>
+    <!-- section, article -->
+    <div>
+        <!-- ! 1. nacin - inline style -->
+        <h1 style="color: blue; font-size: 50px">
+            First way of adding style to an element
+        </h1>
+
+        <!-- ! 2. nacin - style tag -->
+        <h2>
+            Second way of adding style to an element
+        </h2>
+
+        <!-- ! 3. nacin - kroz eksterni css fajl -->
+        <h3>
+            Third and Best way of adding style to an element
+        </h3>
+
+        <!-- ! Selector Types -->
+
+        <h3 class="second-h1">
+            This element should not use previous h3 element style
+        </h3>
+
+        <h1 class="first-h1">
+            First h1 element (styled with CLASS)
+        </h1>
+
+        <h1 class="second-h1">
+            Second h1 element (styled with CLASS)
+        </h1>
+
+        <ol id="my-list">
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ol>
+
+        <button disabled>
+            Try to Click me
+        </button>
+
+        <!-- ! Levels of Specificity (Hierarchy) -->
+
+        <!-- ALT + Z -->
+
+        <p 
+            style="color: yellow" 
+            class="my-paragraph" 
+            id="id-paragraph">
+                Lorem ipsum dolor sit amet.
+        </p>
+
+        <ol>
+            <li>
+                Element Selectors (h1, p, ol) and pseudo-elements (::after, ::before) 
+            </li>
+            <li>
+                Class Selectors (.my-paragraph, .neka-klasa),
+                pseudo-klase (:pseudo-class) i Attribute Selectors (disabled)
+            </li>
+            <li>
+                ID Selectors (#neki-id-elementa)
+            </li>
+            <li>
+                Inline CSS styles
+            </li>
+        </ol>
+
+        <!-- ! Combinators -->
+
+        <div class="test-div">
+            <h4>
+                Testiranje kombinatora
+            </h4>
+        </div>
+
+        <h4>Jos jedan h4 element</h4>
+
+        <!-- ! Combinator Types -->
+
+        <!-- Descendent Combinator -->
+        <div class="my-container">
+            <h5>Prvi h5 element</h5>
+            <h5>Drugi h5 element</h5>
+            <p>Neki kratki tekst</p>
+            <h5>Treci h5 element</h5>
+            <div>
+                <h5>Cetvrti h5 element</h5>
+            </div>
+        </div>
+        <hr>
+        <!-- Adjacent Sibling Combinator -->
+        <div class="my-second-container">
+            <h2>H2 element</h2>
+            <p>CSS applied</p>
+            <h2>H2 element</h2>
+            <h3>H3 element</h3>
+            <p>CSS NOT applied</p>
+            <h2>H2 element</h2>
+        </div>
+        <hr>
+        <!-- Child Combinator -->
+        <div class="my-third-div">
+            <p>CSS applied</p>
+            <p>Nesto</p>
+            <article>
+                <p>Nesto</p>
+            </article>
+            <p>Nesto</p>
+        </div>
+        <hr>
+        <!-- General Sibling Combinator -->
+        <div class="my-fouth-div">
+            <p>First</p>
+            <p>Second</p>
+            <h4>H4 element</h4>
+            <p>Third</p>
+            <h1>h1 element</h1>
+            <p>FOurth</p>
+        </div>
+
+    </div>
+</body>
+</html>

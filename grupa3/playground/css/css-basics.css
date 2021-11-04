@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+/* 1. Universal Selector */
+* {
+    background-color: rgb(196, 196, 221);
+}
+
+/* 2. Element Selector */
+h3 {
+    color: rgb(103, 187, 103);
+    font-size: 55px;
+}
+
+/* 3. Class Selector */
+.first-h1 {
+    color: yellow;
+}
+
+.second-h1 {
+    color: #dd3300;
+    font-family: 'Irish Grover', cursive;
+}
+
+/* 4. ID Selector */
+#my-list {
+    color: blue;
+    font-size: 20px;
+}
+
+/* 5. Attribute Selector */
+[disabled] {
+    font-size: 22px;
+    color: red;
+    font-weight: bold;
+    border: 3px solid red;
+}
+
+p {
+    color: red;
+}
+
+.my-paragraph {
+    color: green;
+}
+
+#id-paragraph {
+    color: purple;
+}
+
+.test-div h4 {
+    color: green;
+}
+
+.my-container h5 {
+    color: red;
+}
+
+.my-second-container + h2 {
+    color: green;
+}
+
+.my-third-div > p {
+    color: blue;
+}
+
+.my-fourth-div ~ p {
+    color: orange;
+}
