@@ -1,3 +1,7 @@
+body {
+    position: relative
+}
+
 .transitions-wrapper {
     max-width: 35%;
     margin: 100px auto;
@@ -71,4 +75,126 @@
 
 .rotateY-box:hover {
     transform: perspective(500px) scaleZ(2) rotateY(180deg);
+}
+
+.rotate-box {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+}
+
+.rotate-box:hover {
+    transform: rotate(-360deg);
+}
+
+.skewX-box {
+    transform: skewX(0);
+    transition: transform 0.5s ease;
+}
+
+.skewX-box:hover {
+    transform: skewX(-20deg);
+}
+
+.skewY-box {
+    transform: skewY(0deg);
+    transition: transform 0.5s ease;
+}
+
+.skewY-box:hover {
+    transform: skewY(-20deg);
+    transition: transform 0.5s ease;
+}
+
+.skew-box {
+    transform: skew(0, 0);
+    transition: transform 0.5s ease;
+}
+
+.skew-box:hover {
+    transform: skew(20deg, 30deg);
+}
+
+.translateX-box {
+    transform: translateX(1);
+    transition: transform 0.5s ease;
+}
+
+.translateX-box:hover {
+    transform: translateX(-30%);
+}
+
+.translateY-box {
+    transform: translateY(1);
+    transition: transform 0.5s ease;
+}
+
+.translateY-box:hover {
+    transform: translateY(30%);
+}
+
+.translate-box {
+    transform: translate(1,1);
+    transition: transform 0.5s ease;
+}
+
+.translate-box:hover {
+    transform: translate(20%, 30%);
+}
+
+/* ! Animations */
+
+.animations-wrapper {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 3px 3px 4px black;
+
+    animation-name: my-animation2;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* * FROM - TO pristup u animacijama */
+
+@keyframes my-animation {
+    from {
+        background: orange;
+        width: 300px;
+        height: 300px;
+        top: 50px;
+        transform: translateX(200px);
+    }
+    to {
+        background: black;
+        width: 100px;
+        height: 100px;
+        box-shadow: 3px 3px 4px orange;
+        transform: skew(-20deg, -30deg);
+    }
+}
+
+/* * Procentualni pristup u animacijama */
+
+@keyframes my-animation2 {
+    0% {
+        background: orange;
+        width: 300px;
+        height: 300px;
+    }
+    50% {
+        background: blue;
+        width: 200px;
+        height: 200px;
+    }
+    100% {
+        background: red;
+        width: 100px;
+        height: 100px;
+    }
 }

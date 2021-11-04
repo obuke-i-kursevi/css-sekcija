@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 2000px;
+}
+
+.background-wrapper {
+    width: 100%;
+    height: 60vh;
+
+    /* ! Background (Image and Color) */
+    /* 
+        background image definise sliku/boju pozadine.
+    */
+    background: url('../assets/test-img.jpg'), orange;
+
+    /* ! Background Position property */
+    /* 
+        background position postavlja pocetnu poziciju slike
+    */
+    /* ? top, left, bottom, center, kombinacije, px, % */
+    /* background-position: center; */
+    background-position: 20% 50%;
+
+    /* ! Background Repeat */
+    /* 
+        background repeat definise da li se background ponavlja
+    */
+    background-repeat: no-repeat;
+
+    /* ! Background Size */
+    /* 
+        background-size definise velicinu background slike
+    */
+    /* 
+        vrednost procenti -> postavljanje sirine i visine background slike u procentima u odnosu na parent element. Prva vrednost predstavlja sirinu, a druga predstavlja visinu. Ako se prosledi samo jedna vrednost, druga vrednost se automatski podesava na "auto"
+    */
+    background-size: 100% 100%;
+
+    /* ! Background Clip */
+    /* 
+        background-clip definise koliko daleko ce pozadina u okviru nekog elementa ici (sezati daleko).
+    */
+    /* ? border-box (default), padding-box, content-box */
+    background-clip: border-box;
+
+    /* ! Background Attachment */
+    /* 
+        background-attachment definise da li ce se slika skrolovati zajedno sa ostatkom stranice ili ce ostati fiksirana na mestu na kojem jeste
+    */
+    background-attachment: fixed;
+
+}

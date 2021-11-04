@@ -73,3 +73,118 @@
 .rotateY-box:hover {
     transform: perspective(500px) scaleZ(2) rotateY(180deg);
 }
+
+.rotate-box {
+    transform: rotate(0);
+    transition: transform 0.5s ease;
+}
+
+.rotate-box:hover {
+    transform: rotate(180deg);
+}
+
+.skewX-box {
+    transform: skewX(0);
+    transition: transform 0.5s ease;
+}
+
+.skewX-box:hover {
+    transform: skewX(-20deg);
+}
+
+.skewY-box {
+    transform: skewY(0);
+    transition: transform 0.5s ease;
+}
+
+.skewY-box:hover {
+    transform: skewY(-20deg);
+}
+
+.skew-box {
+    /* transform: skew(0, 0); */
+    transition: transform 0.5s ease;
+}
+
+.skew-box:hover {
+    transform: skew(20deg, 30deg);
+}
+
+.translateX-box {
+    transform: translateX(1);
+    transition: transform 0.5s ease;
+}
+
+.translateX-box:hover {
+    transform: translateX(-30%);
+}
+
+.translateY-box {
+    transform: translateY(1);
+    transition: transform 0.5s ease;
+}
+
+.translateY-box:hover {
+    transform: translateY(-20%);
+}
+
+.translate-box {
+    transform: translate(1,1);
+    transition: transform 0.5s ease;
+}
+
+.translate-box:hover {
+    transform: translate(20%, 30%);
+}
+
+
+/* ! Animations */
+.animations-wrapper {
+    /* width: 300px;
+    height: 100px; */
+    border-radius: 50%;
+    position: absolute;
+    top: 250px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 4px black;
+
+    animation-name: my-animation1;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-delay: 1s; */
+}
+
+@keyframes my-animation {
+    from {
+        background-color: orange;
+        width: 300px;
+        height: 300px;
+    }
+    to {
+        background-color: black;
+        top: 300px;
+        width: 100px;
+        height: 100px;
+        box-shadow: 3px 3px 4px orange;
+    }
+}
+
+@keyframes my-animation1 {
+    0% {
+        background-color: orange;
+        width: 300px;
+        height: 300px;
+    }
+    50% {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+    }
+    100% {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+}

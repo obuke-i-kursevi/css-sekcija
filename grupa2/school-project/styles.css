@@ -353,4 +353,11 @@ body {
     .main-footer__list {
         padding: 0;
     }
+    .hero-wrapper {
+        height: 70vh;
+        background-image: url('./assets/hero-img-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
 }

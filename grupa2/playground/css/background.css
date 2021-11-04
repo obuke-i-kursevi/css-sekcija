@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 2000px;
+}
+
+.background-wrapper {
+    width: 100%;
+    height: 60vh;
+
+    /* ! Background */
+    background: url('../assets/test-img.jpg'), orange;
+
+    /* ! Background position */
+    /* 
+        background-position postavlja pocetnu poziciju slike;
+        default pozicija slike je top-left ugao elementa;
+        gornji levi ugao (top-left corner) ima poziciju 0% 0%
+        donji desni ugao (bottom-right corner) ima poziciju 100% 100%
+    */
+    /* top, left, right, bottom, center, kombinacije, px, % */
+    background-position: center;
+    /* background-position: 20% 50%; */
+
+    /* ! Background size */
+    /* 
+        background-size definise velicinu background slike;
+        procenti sluze da se postavi sirina i visina slike u procentima u odnosu na parent element;
+        ako se prosledi samo jedna vrednost, druga se vrednost automatski setuje na "auto".
+    */
+    /* cover, contain (da prikaze CELU sliku), % */
+    /* background-size: cover; */
+    background-size: 100% 100%;
+
+    /* ! Background repeat */
+    /* 
+        background-repeat definise da li se ponavlja background;
+    */
+    background-repeat: no-repeat;
+
+    /* ! Background clip */
+    /* 
+        background-clip definise koliko ce daleko pozadina u okviru nekog elementa ici
+    */
+    background-clip: border-box; /* default vrednost */
+
+    /* ! Background attachment */
+    /* 
+        background-attachment definise da li se slika skroluje zajedno sa ostakom stranice ili ostaje fiksirana na mestu na kojem se nalazi;
+        default vrednost: scroll
+    */
+    background-attachment: fixed;
+
+}
