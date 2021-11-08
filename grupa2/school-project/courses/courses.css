@@ -69,12 +69,29 @@
 }
 
 .intermediate-course {
+    order: 3;
+}
+
+.basic-course {
+    transform: translateX(1) scale(1,1);
+    transition: transform 0.5s ease-in-out;
     order: 2;
     align-self: flex-end;
 }
 
-.basic-course {
-    order: 3;
+.basic-course:hover {
+    transform: translateX(-50%) scale(1.2, 1.1);
+}
+
+.advanced-course,
+.intermediate-course {
+    transform: translateX(1) scale(1, 1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.advanced-course:hover,
+.intermediate-course:hover {
+    transform: translateX(50%) scale(1.2, 1.1);
 }
 
 @media screen and (max-width: 768px) {
@@ -101,5 +118,15 @@
         text-decoration: underline;
         text-underline-offset: 4px;
         text-align: left;
+    }
+    .basic-course,
+    .intermediate-course,
+    .advanced-course {
+        transform: none;
+    }
+    .basic-course:hover,
+    .intermediate-course:hover,
+    .advanced-course:hover {
+        transform: none;
     }
 }

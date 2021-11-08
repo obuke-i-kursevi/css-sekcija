@@ -1,0 +1,130 @@
+@import url('../styles.css');
+@import url('../enrollment/enrollment.css');
+
+body {
+    background: linear-gradient(
+        135deg,
+        rgb(202, 200, 200) 30%,
+        #e9baab
+    );
+}
+
+@media screen and (max-width: 768px) {
+    .team-title-wrapper {
+        /* text-align: center; */
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .team-title-wrapper h1 {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 3px #d47657;
+    }
+    .team-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .team-wrapper__teacher {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .team-wrapper__teacher-img img {
+        width: 100%;
+        box-shadow: 7px 7px 5px black;
+    }
+    .team-wrapper__teacher-about h1,
+    .team-wrapper__teacher-about h3 {
+        font-family: 'Source Code Pro', monospace;
+        text-shadow: 4px 4px 5px #d67c5e;
+    }
+    .team-wrapper__teacher-about p {
+        font-family: 'Courier Prime', monospace;
+        text-shadow: 4px 4px 5px #d67c5e;
+    }
+    .even__teacher-about {
+        text-align: right;
+    }
+    .form-wrapper {
+        background: none;
+    }
+    .form-wrapper__form label {
+        text-shadow: 2px 2px #eb9a7f;
+        color: black;
+    }
+    .form-wrapper__form h3 {
+        color: black;
+        text-shadow: 3px 3px #eb9a7f;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .team-title-wrapper {
+        /* text-align: center; */
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .team-title-wrapper h1 {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 3px #d47657;
+    }
+    .team-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .team-wrapper__teacher {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 80px;
+    }
+    .team-wrapper__teacher-img {
+        margin: 0 50px;
+        transform: skewX(-5deg);
+    }
+    .team-wrapper__teacher-img img {
+        width: 100%;
+        max-width: 600px;
+        max-height: 450px;
+        box-shadow: 11px 11px 11px black;
+    }
+    .team-wrapper__teacher-about {
+        width: 40%;
+    }
+    .odd__teacher-about {
+        text-align: right;
+    }
+    .team-wrapper__teacher-about h1,
+    .team-wrapper__teacher-about h3 {
+        font-family: 'Source Code Pro', monospace;
+        text-shadow: 4px 4px 5px #d67c5e;
+    }
+    .team-wrapper__teacher-about p {
+        font-family: 'Courier Prime', monospace;
+        text-shadow: 4px 4px 5px #d67c5e;
+        font-size: 1.2rem;
+    }
+    .even__teacher-img {
+        order: 2;
+    }
+    .even__teacher-about {
+        text-align: left;
+        order: 1;
+    }
+    .form-wrapper {
+        background: none;
+    }
+    .form-wrapper__form label {
+        text-shadow: 2px 2px #eb9a7f;
+        color: black;
+    }
+    .form-wrapper__form h3 {
+        color: black;
+        text-shadow: 3px 3px #eb9a7f;
+    }
+}

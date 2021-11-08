@@ -104,15 +104,23 @@ body {
     padding: 20px;
     font-family: 'Courier Prime', monospace;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-image: url('./assets/hero-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    animation-name: slider;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: normal;
+    animation-timing-function: ease-in-out;
 }
 
 .hero-wrapper h1 {
     margin: 0;
     font-family: 'Courier Prime', monospace;
+    font-size: 3.5rem;
+    color: #e9baab;
+    text-shadow: 2px 2px 3px black;
 }
 
 /* ! PLANS Section */
@@ -332,6 +340,22 @@ body {
     cursor: pointer;
 }
 
+/* ! CSS Animacija */
+@keyframes slider {
+    0% {
+        background-image: url('./assets/hero-image.jpg');
+    }
+    33% {
+        background-image: url('./assets/hero-image2.jpg')
+    }
+    66% {
+        background-image: url('./assets/hero-image3.jpg');
+    }
+    99% {
+        background-image: url('./assets/hero-image.jpg');
+    }
+}
+
 /* ! Media Upiti */
 @media screen and (max-width: 768px) {
     .about-wrapper__text {
@@ -358,6 +382,9 @@ body {
         background-image: url('./assets/hero-img-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        animation: none;
     }
-    
+    .hero-wrapper h1 {
+        font-size: 2.5rem;
+    }
 }
