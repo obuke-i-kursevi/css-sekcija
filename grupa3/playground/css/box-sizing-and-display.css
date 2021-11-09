@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.hero-wrapper {
+    border: 1px solid black;
+    margin: 25px;
+    /* ! Shorthand property */
+    /* margin: 25px 35px 55px 15px; */
+    /* margin: 25px 35px; */
+    /* margin-right: 55px;
+    margin-bottom: 105px;
+    margin-top: 15px;
+    margin-left: 5px; */
+    width: 250px;
+    height: 250px;
+}
+
+/* ! Box-sizing property part */
+.content-box {
+    box-sizing: content-box; /* defaultni (ne mora se eksplicitno navesti */
+    width: 500px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid red;
+    background-color: rgb(214, 211, 211);
+}
+
+.border-box {
+    box-sizing: border-box;
+    width: 500px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid green;
+    background-color: aquamarine;
+}
+
+p {
+    color: blue;
+}
+
+.part-of-text {
+    color: red;
+}
+
+/* ! Display property part */
+.block-element {
+    /* display: block; */
+    border: 2px solid blue;
+    padding: 10px;
+    width: 50%;
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+.inline-element {
+    /* display: inline; */
+    border: 2px solid purple;
+    padding: 10px;
+    width: 50%;
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+.inline-block-element {
+    display: inline-block;
+    width: 250px;
+    height: 10px;
+    border: 2px solid orange;
+    padding: 10px;
+}
+
+.not-visible {
+    /* display: none; */
+    visibility: hidden;
+}
