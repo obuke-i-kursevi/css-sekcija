@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Source+Code+Pro&display=swap');
+
+/* 
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Source Code Pro', monospace;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fef9f8;
+}
+
+/* ! Main Header */
+.main-header {
+    border-top: 10px solid #ef9273;
+    background-color: #fef9f8;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 5px solid white;
+}
+
+.main-header__logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    /* width: 950px ! ne jer pada u novi red */
+    width: calc(100% - 190px);
+}
+
+.main-header__logo a,
+.main-nav__item a {
+    color: #0d0d0d;
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.main-nav__items {
+    list-style-type: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.main-nav__item:nth-child(1),
+.main-nav__item:nth-child(2) {
+    margin-right: 25px;
+}
+
+.main-nav__item a {
+    padding: 5px 20px;
+    transition: 0.3s ease; /* prelazak elementa iz jednog u drugo stanje (npr hovered stanje) */
+}
+
+.main-nav__item a:hover {
+    color: #fef9f8;
+    background-color: #ef9273;
+    border-radius: 40px;
+}
+
+.hero-wrapper {
+    background-image: url('./assets/hero-image.jpg');
+    width: 100%;
+    height: 80vh;
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-wrapper h1 {
+    margin: 0;
+    font-family: 'Courier Prime', monospace;
+    font-size: 35px;
+    color: #ef9273;
+}
