@@ -1,0 +1,73 @@
+header nav {
+  background-color: orange;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header nav ul li {
+  color: black;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.first-div, .third-div {
+  background-color: aquamarine;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.first-div h1, .third-div h1 {
+  color: #dd3300;
+}
+
+.first-div h1:hover, .third-div h1:hover {
+  color: yellow;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.second-div {
+  background-color: #f0d4d4;
+  height: 50vh;
+}
+
+.second-div h2 {
+  color: #333381;
+}
+
+.third-div {
+  height: 640px;
+  width: 25%;
+}
+
+.third-div h1 {
+  color: green;
+}
+/*# sourceMappingURL=sass-practice.css.map */

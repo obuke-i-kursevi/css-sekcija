@@ -1,0 +1,41 @@
+@import './variables';
+@import './header';
+@import './mixins';
+
+.first-div {
+    background-color: aquamarine;
+    height: 50vh;
+
+    @include flexCenter(center, column);
+
+    h1 {
+        color: $mainTitleColor;
+        &:hover {
+            color: yellow;
+            transition: 0.3s ease;
+        }
+    }
+
+}
+
+.second-div {
+    background-color: rgb(240, 212, 212);
+    height: 50vh;
+
+    h2 {
+        color: $subTitleColor;
+    }
+
+}
+
+.third-div {
+    @extend .first-div;
+
+    // + - / *
+    height: 320px * $doubleSize;
+    width: 100% * 0.25;
+
+    h1 {
+        color: green;
+    }
+}
