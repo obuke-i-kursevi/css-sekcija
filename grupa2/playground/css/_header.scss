@@ -1,0 +1,26 @@
+@import 'mixins';
+
+header {
+
+    nav {
+        background-color: orange;
+
+        ul {
+            list-style-type: none;
+
+            @include flexCenter(space-between, row);
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-between;
+
+            li {
+                color: black;
+                font-size: 2.3rem;
+                font-weight: bold;
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,71 @@
+header nav {
+  background-color: orange;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header nav ul li {
+  color: black;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.first-div, .third-div {
+  background-color: aquamarine;
+  height: 50vh;
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.first-div h1, .third-div h1 {
+  color: #be5839;
+}
+
+.first-div h1:hover, .third-div h1:hover {
+  color: yellow;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.second-div h2 {
+  color: blue;
+}
+
+.third-div {
+  height: 640px;
+  width: 25%;
+  margin: 25px;
+  background-color: #e9e9cb;
+}
+
+.third-div h1 {
+  color: purple;
+}
+/*# sourceMappingURL=sass-pratice.css.map */

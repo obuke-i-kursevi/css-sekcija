@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'header';
+
+.first-div {
+    background-color: aquamarine;
+    height: 50vh;
+    margin: $regularMargin * 2;
+
+    @include flexCenter(center, column-reverse);
+
+    h1 {
+        color: $mainTitleColor;
+
+        &:hover {
+            color: yellow;
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+}
+
+.second-div {
+    h2 {
+        color: $subTitleColor;
+    }
+}
+
+.third-div {
+    @extend .first-div;
+
+    // + - * /
+
+    height: 320px * $doubleSize;
+    width: 100% * 0.25;
+    margin: $regularMargin;
+
+    background-color: rgb(233, 233, 203);
+    h1 {
+        color: purple;
+    }
+}
