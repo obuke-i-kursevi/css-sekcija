@@ -17,24 +17,30 @@ body {
 /* ! Main Header */
 .main-header {
     border-top: 10px solid #ef9273;
-    background-color: #fef9f8;
+    background: #fef9f8;
     padding: 20px;
     width: 100%;
     border-bottom: 5px solid white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-header__logo {
-    display: inline-block;
-    vertical-align: middle;
+    /* display: inline-block;
+    vertical-align: middle; */
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bolder;
+    font-size: 25px;
 }
 
-.main-nav {
+/* .main-nav {
     display: inline-block;
     text-align: right;
     vertical-align: middle;
-    /* width: 950px ! ne jer pada u novi red */
     width: calc(100% - 190px);
-}
+} */
 
 .main-header__logo a,
 .main-nav__item a {
@@ -49,9 +55,19 @@ body {
     list-style-type: none;
 }
 
-.main-nav__item {
+/* .main-nav__item {
     display: inline-block;
     white-space: nowrap;
+} */
+
+.main-nav__items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .main-nav__item:nth-child(1),
@@ -83,5 +99,5 @@ body {
     margin: 0;
     font-family: 'Courier Prime', monospace;
     font-size: 35px;
-    color: #ef9273;
+    color: black;
 }
