@@ -5,3 +5,12 @@
 .second-class {
     color: blue;
 }
+
+.not-pseudo-class-practice {
+    margin-top: 50px;
+}
+
+.not-pseudo-class-practice a:not(.active) {
+    color: red;
+    font-size: 20px;
+}

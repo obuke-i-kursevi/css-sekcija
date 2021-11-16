@@ -1,0 +1,38 @@
+.main-wrapper {
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: row wrap; /* ! kombinacija flex-direction-a i flex-wrap-a */
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.main-wrapper div {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.box-num-1 {
+    /* width: 250px; */
+    /* flex-basis: 250px; */
+    /* flex-shrink: 1; */
+    /* flex-grow: 1; */
+    flex: 1 0 auto; /* ! kombinacija flex-grow, flex-shrink i flex-basis */
+    /* order: 3; */
+}
+
+.box-num-2 {
+    /* flex-grow: 1; */
+    /* order: 2; */
+    align-self: flex-end;
+}
+
+.box-num-3 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+    /* order: 1; */
+}
