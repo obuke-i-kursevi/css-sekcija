@@ -1,0 +1,22 @@
+p::first-line {
+    color: red;
+    text-decoration: underline;
+}
+
+p::first-letter {
+    color: blue;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+p::before {
+    content: "😃 ";
+}
+
+p::after {
+    content: " ✅"
+}
+
+p:hover {
+    color: blue;
+}

@@ -1,0 +1,48 @@
+.hero-wrapper {
+  height: 50vh;
+  background: #dd3300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 360px) {
+  .hero-wrapper {
+    background: #333381;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+  .hero-wrapper {
+    background: #ff6f44;
+  }
+}
+
+@media (min-width: 1367px) {
+  .hero-wrapper {
+    background: #aa2700;
+  }
+  .hero-wrapper h1::before {
+    content: 'Watching on Desktop ';
+  }
+}
+
+@media (min-width: 2501px) {
+  .hero-wrapper h1::before {
+    content: none;
+  }
+  .hero-wrapper h1::after {
+    content: ' watching on TV';
+  }
+}
+/*# sourceMappingURL=include-media.css.map */
