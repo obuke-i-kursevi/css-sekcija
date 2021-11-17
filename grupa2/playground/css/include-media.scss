@@ -1,0 +1,34 @@
+@import 'variables';
+@import 'mixins';
+@import 'breakpoints';
+
+.hero-wrapper {
+    background-color: $mainTitleColor;
+    height: 50vh;
+    @include flexCenter(center, row);
+
+    @include media('<=phone') {
+        background: $subTitleColor;
+    }
+
+    @include media('>phone', '<=tablet') {
+        background: lighten($subTitleColor, 20%);
+    }
+
+    @include media('>desktop') {
+        background: darken($mainTitleColor, 10%);
+        h1::before {
+            content: 'Desktop ';
+        }
+    }
+
+    @include media('>TV') {
+        h1::before {
+            content: none;
+        }
+        h1::after {
+            content: ' Television';
+        }
+    }
+
+}

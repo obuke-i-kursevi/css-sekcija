@@ -1,0 +1,23 @@
+/* ! Primer pseudo klase */
+/* p:hover {
+    color: red;
+} */
+
+/* ! Primeri pseudo elemenata */
+p::first-line {
+    color: red;
+}
+
+p::first-letter {
+    font-weight: bold;
+    color: blue;
+    font-size: 2rem;
+}
+
+p::before {
+    content: "😄 ";
+}
+
+p::after {
+    content: " 🙌"
+}

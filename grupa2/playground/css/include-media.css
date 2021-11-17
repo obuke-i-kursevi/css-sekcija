@@ -1,0 +1,48 @@
+.hero-wrapper {
+  background-color: #be5839;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 360px) {
+  .hero-wrapper {
+    background: blue;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 768px) {
+  .hero-wrapper {
+    background: #6666ff;
+  }
+}
+
+@media (min-width: 1367px) {
+  .hero-wrapper {
+    background: #97462d;
+  }
+  .hero-wrapper h1::before {
+    content: 'Desktop ';
+  }
+}
+
+@media (min-width: 2501px) {
+  .hero-wrapper h1::before {
+    content: none;
+  }
+  .hero-wrapper h1::after {
+    content: ' Television';
+  }
+}
+/*# sourceMappingURL=include-media.css.map */
