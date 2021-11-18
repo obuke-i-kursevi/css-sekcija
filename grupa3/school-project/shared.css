@@ -86,6 +86,8 @@ body {
     border-radius: 40px;
 }
 
+/* ! Hero section */
+
 .hero-wrapper {
     background-image: url('./assets/hero-image.jpg');
     width: 100%;
@@ -100,4 +102,109 @@ body {
     font-family: 'Courier Prime', monospace;
     font-size: 35px;
     color: black;
+}
+
+/* ! Plans section */
+
+.plans-wrapper {
+    margin: 50px auto;
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.plans-wrapper .plans-wrapper__title {
+    text-align: center;
+    flex-basis: 100%;
+    font-family: 'Courier Prime', monospace;
+    font-size: 45px;
+    letter-spacing: 5px; /* dodaje razmak izmedju slova */
+    text-shadow: 3px 3px 3px #eb9a7f; /* dodavanje senke iza teksta */
+}
+
+.plans-wrapper .plans-wrapper__article {
+    border: 1px solid black;
+    padding: 50px 35px;
+    background: #e9baab;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex-basis: 30%;
+    min-width: 350px; /* definise minimalnu sirinu elementa */
+    border-radius: 25px;
+    border: 3px solid black;
+    margin-bottom: 20px;
+    box-shadow: 5px 4px 5px 5px rgba(0, 0, 0, 0.5); /* definisanje senke iza nekog box-a (moze i inset - ka unutra senka) */
+}
+
+.advanced { 
+    order: 1;
+    height: 650px;
+    min-height: 700px; /* minimalna visina, bice izmenjeno u radu sa responsivnesom */
+    background: #eb9a7f !important;
+}
+
+.intermediate {
+    order: 2;
+}
+
+.plans-wrapper__article h1:nth-child(1) {
+    font-family: 'Courier Prime', monospace;
+    font-weight: bolder;
+    font-size: 35px; 
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 3px #ddd7d6;
+}
+
+.plans-wrapper__article h1:nth-child(2) {
+    font-family: 'Courier Prime', monospace;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    text-shadow: 3px 3px 3px #ddd7d6;
+    text-align: center;
+    text-underline-offset: 5px; /* definise razmak izmedju teksta i underline-a */
+}
+
+.plans-wrapper__article h2 {
+    text-shadow: 3px 3px 3px #ddd7d6;
+    font-family: 'Courier Prime', monospace;
+}
+
+.plans-wrapper__article h3 {
+    text-shadow: 3px 3px 3px #ddd7d6;
+    font-family: 'Courier Prime', monospace;
+    text-align: center;
+    font-size: 23px;
+}
+
+.plans-wrapper__article ul {
+    list-style-type: circle;
+    align-self: flex-start;
+}
+
+.plans-wrapper__article ul li {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 19px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #ddd7d6;
+}
+
+.choose-plan__button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-family: 'Courier Prime', monospace;
+    border: 2px solid black;
+    font-size: 18px;
+    background: #fef9f8;
+    border-radius: 10px;
+}
+
+.choose-plan__button:hover {
+    cursor: pointer;
+    background: #ddd7d6;
+    transition: 0.3s ease; /* vreme i nacin implementacije tranzicije na hover dugmeta */
 }
