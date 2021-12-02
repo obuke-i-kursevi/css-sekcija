@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enrollment.css">
     <title>Enrollment</title>
 </head>
 <body>
-    <h1>Enrollment Page</h1>
+    <!-- ! Main header -->
+    <header class="main-header">
+        <div class="main-header__logo">
+            <a href="../index.html">
+                Our Logo
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item first">
+                    <a href="../courses/index.html">
+                        Courses
+                    </a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../team/index.html">
+                        Our Team
+                    </a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="index.html">
+                        Enrollment
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ! Form -->
+    <div class="form-wrapper">
+        <form class="form-wrapper__form" name="enrollment-form">
+            <h3>Enroll for one of our courses</h3>
+            <label for="firstName">
+                First Name
+            </label>
+            <input type="text">
+            <label for="lastName">
+                Last Name
+            </label>
+            <input type="text">
+            <label for="email">
+                Email
+            </label>
+            <input type="email">
+            <label for="courseCbx">
+                Choose course
+            </label>
+            <select name="courseCbx" id="courseCbx">
+                <option value="basic">Basic</option>
+                <option value="intermmediate">Intermmediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+            <label for="message">
+                Additional message
+            </label>
+            <textarea name="" id="" cols="30" rows="10">
+            </textarea>
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+
+    <!-- ! Footer Section -->
+    <footer class="main-footer">
+        <nav class="main-footer__nav">
+            <ul class="main-footer__list">
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">Terms of Use</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
