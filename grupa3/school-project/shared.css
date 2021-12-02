@@ -31,7 +31,7 @@ body {
     /* display: inline-block;
     vertical-align: middle; */
     font-family: 'Source Code Pro', monospace;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 25px;
 }
 
@@ -47,7 +47,7 @@ body {
     color: #0d0d0d;
     text-decoration: none;
     font-family: 'Source Code Pro', monospace;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 25px;
 }
 
@@ -84,6 +84,11 @@ body {
     color: #fef9f8;
     background-color: #ef9273;
     border-radius: 40px;
+}
+
+.main-header__logo a img {
+    width: 60px;
+    height: 60px;
 }
 
 /* ! Hero section */
