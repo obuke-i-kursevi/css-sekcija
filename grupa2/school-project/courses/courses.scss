@@ -1,0 +1,134 @@
+@import url('../styles.css');
+
+@import '../assets/scss/variables';
+@import '../assets/scss/breakpoints';
+
+.courses-wrapper {
+    padding: 50px;
+    margin: 0;
+    width: 100%;
+    background: {
+        image: url('../assets/images/courses-image.jpg');
+        size: cover;
+        repeat: no-repeat;
+    };
+    display: flex;
+    flex: {
+        direction: column;
+    }
+    justify-content: space-evenly;
+    opacity: 0.8;
+    @include media('<=tablet') {
+        display: flex;
+        flex: {
+            direction: column;
+        }
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.courses-wrapper__course {
+    position: relative;
+    z-index: 0;
+    border: $cardBorder;
+    width: 50%;
+    background: $headerAndFooterBackgroundColor;
+    padding: 25px;
+    margin-bottom: 20px;
+    opacity: 0.85;
+    min-width: 300px; /* definisanje minimalne sirine nekog elementa */
+    min-height: 250px; /* definisanje minimalne visine nekog elementa */
+    @include media('<=tablet') {
+        text-align: center;
+        transform: none;
+        &:hover {
+            transform: none;
+        }
+    }
+}
+
+.courses-wrapper__course:hover {
+    border-color: $cardColor;
+    cursor: pointer;
+    transition: $transitionEaseInOut;
+}
+
+.courses-wrapper__course h1 {
+    font-family: $sourceCodePro;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+}
+
+.courses-wrapper__course ul {
+    list-style-type: circle;
+    @include media('<=tablet') {
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+.courses-wrapper__course ul,p {
+    font-size: 0.9rem;
+    font-family: $courierPrime;
+}
+
+.courses-wrapper__course ul li {
+    @include media('<=tablet') {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+}
+
+.advanced-course {
+    order: 1;
+}
+
+.basic-course {
+    transform: translateX(1) scale(1,1);
+    transition: transform $transitionEaseInOut;
+    order: 2;
+    align-self: flex-end;
+    @include media('<=tablet') {
+        align-self: center;
+    }
+}
+
+.basic-course:hover {
+    transform: translateX(-50%) scale(1.2, 1.1);
+}
+
+.intermediate-course {
+    order: 3;
+}
+
+.advanced-course,
+.intermediate-course {
+    transform: translateX(1) scale(1,1);
+    transition: transform $transitionEaseInOut;
+}
+
+.intermediate-course:hover,
+.advanced-course:hover {
+    transform: translateX(50%) scale(1.2, 1.1);
+}
+
+.advanced-course .recommended {
+    font-family: $courierPrime;
+    text-transform: uppercase;
+    border: $blackBorder;
+    padding: 10px;
+    border-radius: 10px;
+    background: darken(#ef9273, 10%);
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    right: 10px;
+    @include media('<=desktop') {
+        position: static;
+        text-align: center;
+    }
+}

@@ -1,108 +1,133 @@
-@import url('../styles.css');
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
+@import url("../styles.css");
 .form-wrapper {
-    /* height: 90vh; */
-    padding: 50px 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('../assets/enrollment-image.jpg');
-    background-size: cover;
+  /* height: 90vh; */
+  padding: 50px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../assets/images/enrollment-image.jpg");
+  background-size: cover;
 }
 
 .form-wrapper__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 20px;
-    color: #0d0d0d;
-    padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Courier Prime", monospace;
+  font-size: 20px;
+  color: #0d0d0d;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .form-wrapper__form {
+    width: 80%;
+  }
 }
 
 .form-wrapper__form h3 {
-    width: 100%;
-    margin-bottom: 45px;
-    color: #eb9a7f;
-    font-weight: bolder;
-    font-size: 30px;
-    text-shadow: 3px 3px black;
+  width: 100%;
+  margin-bottom: 45px;
+  color: #eb9a7f;
+  font-weight: bolder;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px black;
 }
 
-.form-wrapper__form label, 
-.form-wrapper__form input, 
-.form-wrapper__form select, 
+@media (max-width: 768px) {
+  .form-wrapper__form h3 {
+    text-align: center;
+  }
+}
+
+.form-wrapper__form label,
+.form-wrapper__form input,
+.form-wrapper__form select,
 .form-wrapper__form textarea {
-    border: 3px solid #eb9a7f;
-    align-self: flex-start;
-    margin-bottom: 10px;
-    font-family: 'Courier Prime', monospace;
-    font-size: 20px;
+  border: 3px solid #eb9a7f;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 10px;
+  font-family: "Courier Prime", monospace;
+  font-size: 20px;
 }
 
 .form-wrapper__form label {
-    text-shadow: 2px 2px black;
-    border: none;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-    color:#eb9a7f;
-    font-weight: bolder;
+  text-shadow: 3px 3px 3px black;
+  border: none;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #eb9a7f;
+  font-weight: bolder;
 }
 
-.form-wrapper__form input, 
+.form-wrapper__form input,
 .form-wrapper__form select {
-    width: 100%;
-    height:50px;
-    padding: 10px;
-    box-shadow: 3px 3px 3px 3px #e9baab;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  -webkit-box-shadow: 3px 3px 3px 3px #e9baab;
+          box-shadow: 3px 3px 3px 3px #e9baab;
 }
 
 .form-wrapper__form textarea {
-    height: 250px;
-    width: 100%;
-    padding: 10px;
-    resize: none;
-    box-shadow: 2px 2px 3px 2px #e9baab;
+  height: 250px;
+  width: 100%;
+  padding: 10px;
+  resize: none;
+  -webkit-box-shadow: 3px 3px 3px 3px #e9baab;
+          box-shadow: 3px 3px 3px 3px #e9baab;
 }
 
 .form-wrapper__form button {
-    margin-top: 20px;
-    background: #eb9a7f;
-    border: 3px solid black;
-    border-radius: 15px;
-    padding: 20px;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
+  margin-top: 20px;
+  background: #eb9a7f;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .form-wrapper__form button:hover {
-    cursor: pointer;
-    background: #e9baab;
-    transition: 0.3s ease;
+  cursor: pointer;
+  background: #e9baab;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 textarea:focus,
 select:focus,
-input:focus{
-    outline: none;
+input:focus {
+  outline: none;
 }
 
 @media screen and (max-width: 425px) {
-    .form-wrapper__form {
-        width: 80%;
-    }
-    .form-wrapper__form h3 {
-        text-align: center;
-    }
+  .form-wrapper__form {
+    width: 80%;
+  }
+  .form-wrapper__form h3 {
+    text-align: center;
+  }
 }
+/*# sourceMappingURL=enrollment.css.map */
