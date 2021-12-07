@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&display=swap');
+
+/* 
+    font-family: 'Corinthia', cursive;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.hero-wrapper {
+    background-image: url('../../school-project/assets/hero-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-part h1 {
+    font-size: 3.5em;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    color: #dd3300;
+}
+
+.about-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    margin-top: 15px;
+    width: 50%;
+    min-width: 300px;
+    padding: 20px 30px;
+    text-align: center;
+    background: rgb(230, 227, 227);
+}
+
+.about-part h3 {
+    font-size: 1.5em;
+}
+
+.about-part p {
+    font-family: 'Corinthia', cursive;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.about-part button {
+    border: 2px solid black;
+    padding: 10px 15px;
+    font-size: 1.2em;
+}
+
+.about-part button:hover {
+    cursor: pointer;
+    background: rgb(243, 232, 212);
+}
+
+@media screen and (max-width: 768px) {
+    .hero-wrapper {
+        background-image: none;
+        background-color: azure;
+    }
+    .about-part {
+        width: 80%;
+    }
+    .title-part h1 {
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .title-part h1 {
+        color: blue;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}

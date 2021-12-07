@@ -131,7 +131,7 @@ body {
 
 .plans-wrapper .plans-wrapper__article {
     border: 1px solid black;
-    padding: 50px 35px;
+    padding: 20px 15px;
     background: #e9baab;
     display: flex;
     flex-flow: column nowrap;
@@ -146,7 +146,7 @@ body {
 
 .advanced { 
     order: 1;
-    height: 650px;
+    height: 550px;
     min-height: 700px; /* minimalna visina, bice izmenjeno u radu sa responsivnesom */
     background: #eb9a7f !important;
 }
@@ -318,4 +318,24 @@ body {
 
 .main-footer li a:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .about-wrapper__text {
+        width: 80%;
+        font-size: 1.1em;
+    }
+    .about-wrapper__founders-card img {
+        width: 300px;
+        height: 300px;
+    }
+    .about-wrapper__founders {
+        text-align: center;
+    }
+    .main-footer__nav {
+        width: 100%;
+    }
+    .main-footer__list {
+        padding: 0;
+    }
 }

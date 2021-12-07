@@ -79,3 +79,30 @@
     right: 10px;
     z-index: -1;
 }
+
+@media screen and (max-width: 768px) {
+    .courses-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .basic-course {
+        align-self: center;
+    }
+    .courses-wrapper__course {
+        text-align: center;
+    }
+    .courses-wrapper__course ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .courses-wrapper__course ul li {
+        text-underline-offset: 2px;
+        text-decoration: underline;
+    }
+    .advanced-course .recommended {
+        text-align: center;
+        position: static;
+    }
+}
