@@ -100,13 +100,19 @@ body {
     padding: 20px;
     background-size: cover;
     background-repeat: no-repeat;
+
+    animation-name: slider;
+    animation-timing-function: ease;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
 }
 
 .hero-wrapper h1 {
     margin: 0;
     font-family: 'Courier Prime', monospace;
-    font-size: 35px;
-    color: black;
+    font-size: 3.5rem;
+    color: #e9baab;
+    text-shadow: 3px 3px 3px black;
 }
 
 /* ! Plans section */
@@ -146,7 +152,7 @@ body {
 
 .advanced { 
     order: 1;
-    height: 550px;
+    /* height: 550px; */
     min-height: 700px; /* minimalna visina, bice izmenjeno u radu sa responsivnesom */
     background: #eb9a7f !important;
 }
@@ -320,6 +326,8 @@ body {
     cursor: pointer;
 }
 
+/* ! Media queries */
+
 @media screen and (max-width: 768px) {
     .about-wrapper__text {
         width: 80%;
@@ -337,5 +345,35 @@ body {
     }
     .main-footer__list {
         padding: 0;
+    }
+    .hero-wrapper {
+        background-image: url('./assets/hero-img-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+        animation: none;
+    }
+    .hero-wrapper h1 {
+        font-size: 2.2rem;
+    }
+    .advanced {
+        min-height: 600px;
+    }
+}
+
+/* ! Animations */
+
+@keyframes slider {
+    0% {
+        background-image: url('./assets/hero-image.jpg');
+    }
+    33% {
+        background-image: url('./assets/hero-image2.jpg');
+    }
+    66% {
+        background-image: url('./assets/hero-image3.jpg');
+    }
+    99% {
+        background-color: url('./assets/hero-image.jpg');
     }
 }

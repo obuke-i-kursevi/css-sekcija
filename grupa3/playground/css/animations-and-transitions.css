@@ -140,3 +140,57 @@
 .translate-box:hover {
     transform: translate(20%, 30%);
 }
+
+
+/* ! Animations */
+
+.animations-wrapper {
+
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 4px black;
+
+    animation-name: my-animation1;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+
+}
+
+@keyframes my-animation {
+    from {
+        background-color: orange;
+        width: 300px;
+        height: 300px;
+    }
+    to {
+        background-color: black;
+        top: 300px;
+        width: 100px;
+        height: 100px;
+        box-shadow: 3px 3px 4px orange;
+    }
+}
+
+@keyframes my-animation1 {
+    0% {
+        background-color: orange;
+        width: 300px;
+        height: 300px;
+    }
+    50% {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+    }
+    100% {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+}
+

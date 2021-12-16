@@ -80,6 +80,26 @@
     z-index: -1;
 }
 
+.advanced-course,
+.intermediate-course {
+    transform: translateX(1) scale(1,1);
+    transition: transform 0.6s ease;
+}
+
+.intermediate-course:hover,
+.advanced-course:hover {
+    transform: translateX(50%) scale(1.2, 1.1);
+}
+
+.basic-course {
+    transform: translateX(1) scale(1, 1);
+    transition: transform 0.6s ease;
+}
+
+.basic-course:hover {
+    transform: translateX(-50%) scale(1.2, 1.1);
+}
+
 @media screen and (max-width: 768px) {
     .courses-wrapper {
         display: flex;

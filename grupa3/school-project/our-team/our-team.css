@@ -1,4 +1,5 @@
 @import url('../shared.css');
+@import url('../enrollment/enrollment.css');
 
 body {
     background: linear-gradient(135deg, #cac8c8 30%, #e9baab);
@@ -12,6 +13,8 @@ body {
     font-family: 'Source Code Pro', monospace;
     font-size: 2.5rem;
     text-shadow: 3px 3px 2px #d47657;
+    margin-bottom: 70px;
+    margin-top: 40px;
 }
 .team-wrapper__teacher-about h1,
 .team-wrapper__teacher-about h3 {
@@ -22,6 +25,14 @@ body {
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 2px 2px 3px #d47657;
 }
+.form-wrapper {
+    background: none;
+}
+.form-wrapper h3 {
+    width: 100%;
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) { 
     .team-wrapper {
         width: 90%;
@@ -53,6 +64,9 @@ body {
         align-items: center;
         justify-content: space-around;
         margin-bottom: 80px;
+    }
+    .team-wrapper__teacher-img {
+        transform: skewX(-5deg);
     }
     .team-wrapper__teacher-img img {
         width: 100%;
