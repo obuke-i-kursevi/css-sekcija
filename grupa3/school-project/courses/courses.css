@@ -81,7 +81,8 @@
 }
 
 .advanced-course,
-.intermediate-course {
+.intermediate-course,
+.basic-course {
     transform: translateX(1) scale(1,1);
     transition: transform 0.6s ease;
 }
@@ -89,11 +90,6 @@
 .intermediate-course:hover,
 .advanced-course:hover {
     transform: translateX(50%) scale(1.2, 1.1);
-}
-
-.basic-course {
-    transform: translateX(1) scale(1, 1);
-    transition: transform 0.6s ease;
 }
 
 .basic-course:hover {
@@ -124,5 +120,10 @@
     .advanced-course .recommended {
         text-align: center;
         position: static;
+    }
+    .basic-course:hover,
+    .intermediate-course:hover,
+    .advanced-course:hover {
+        transform: none;
     }
 }
