@@ -1,0 +1,36 @@
+@import './variables';
+@import './header';
+
+.first-div {
+    background-color: lightgray;
+    padding: 30px;
+    @include flexMixin(center, nowrap);
+
+    h1 {
+        color: lighten($mainTitleColor, 20%);
+        // color: darken($mainTitleColor, 2%);
+        &:hover {
+            color: black;
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+    }
+}
+
+.second-div {
+    h2 {
+        color: $subTitleColor;
+    }
+}
+
+.third-div {
+    @extend .first-div;
+    height: $standardHeight*2;
+    width: $fullWidth/2;
+    h1 {
+        color: purple;
+        &:hover {
+            color: yellow;
+        }
+    }
+}

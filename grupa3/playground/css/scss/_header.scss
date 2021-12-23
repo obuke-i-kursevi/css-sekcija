@@ -1,0 +1,21 @@
+@mixin flexMixin($justifyContent, $wrap) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: $wrap;
+    align-items: center;
+    justify-content: $justifyContent;
+}
+
+header {
+    nav {
+        background-color: orange;
+        ul {
+            list-style-type: none;
+            @include flexMixin(space-between, wrap);
+            li {
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
