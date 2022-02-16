@@ -1,0 +1,136 @@
+@import url('../styles.css');
+@import url('../enrollment/enrollment.css');
+
+
+@import '../assets/scss/variables';
+@import '../assets/scss/breakpoints';
+
+body {
+    background: linear-gradient(
+        135deg,
+        rgb(202, 200, 200) 30%,
+        #e9baab
+    );
+}
+
+@include media('<=tablet') {
+    .team-title-wrapper {
+        /* text-align: center; */
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .team-title-wrapper h1 {
+        font-family: $sourceCodePro;
+        font-size: 2.5rem;
+        text-shadow: $textShadowLight;
+    }
+    .team-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .team-wrapper__teacher {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .team-wrapper__teacher-img img {
+        width: 100%;
+        box-shadow: $boxShadowDark;
+    }
+    .team-wrapper__teacher-about h1,
+    .team-wrapper__teacher-about h3 {
+        font-family: $sourceCodePro;
+        text-shadow: $textShadowLight;
+    }
+    .team-wrapper__teacher-about p {
+        font-family: $courierPrime;
+        text-shadow: $textShadowLight;
+    }
+    .even__teacher-about {
+        text-align: right;
+    }
+    .form-wrapper {
+        background: none;
+    }
+    .form-wrapper__form label {
+        text-shadow: $textShadowLight;
+        color: black;
+    }
+    .form-wrapper__form h3 {
+        color: black;
+        text-shadow: $textShadowLight;
+    }
+}
+
+@include media('>tablet') {
+    .team-title-wrapper {
+        /* text-align: center; */
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .team-title-wrapper h1 {
+        font-family: $sourceCodePro;
+        font-size: 2.5rem;
+        text-shadow: $textShadowLight;
+    }
+    .team-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .team-wrapper__teacher {
+        display: flex;
+        flex {
+            direction: row;
+        }
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 80px;
+    }
+    .team-wrapper__teacher-img {
+        margin: 0 50px;
+        transform: skewX(-5deg);
+    }
+    .team-wrapper__teacher-img img {
+        width: 100%;
+        max-width: 500px;
+        max-height: 450px;
+        box-shadow: $boxShadowDark;
+    }
+    .team-wrapper__teacher-about {
+        width: 40%;
+    }
+    .odd__teacher-about {
+        text-align: right;
+    }
+    .team-wrapper__teacher-about h1,
+    .team-wrapper__teacher-about h3 {
+        font-family: $sourceCodePro;
+        text-shadow: $textShadowLight;
+    }
+    .team-wrapper__teacher-about p {
+        font-family: $courierPrime;
+        text-shadow: $textShadowLight;
+        font-size: 1.2rem;
+    }
+    .even__teacher-img {
+        order: 2;
+    }
+    .even__teacher-about {
+        text-align: left;
+        order: 1;
+    }
+    .form-wrapper {
+        background: none;
+    }
+    .form-wrapper__form label {
+        text-shadow: $textShadowLight;
+        color: black;
+    }
+    .form-wrapper__form h3 {
+        color: black;
+        text-shadow: $textShadowLight;
+    }
+}

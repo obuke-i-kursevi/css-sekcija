@@ -1,0 +1,61 @@
+/**
+*
+* Testing
+*
+**/
+.hero-wrapper {
+  height: 50vh;
+  background-color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 360px) {
+  .hero-wrapper {
+    background-color: #dd3300;
+  }
+  .hero-wrapper h1::before {
+    content: '(watching on mobile phone) ';
+  }
+}
+
+@media (min-width: 361px) and (max-width: 768px) {
+  .hero-wrapper {
+    background-color: #00e600;
+  }
+  .hero-wrapper h1::after {
+    content: ' (watching on mobile/tablet device)';
+  }
+}
+
+@media (min-width: 1367px) {
+  .hero-wrapper {
+    background-color: #004d00;
+  }
+}
+
+@media (min-width: 2501px) {
+  .hero-wrapper {
+    background-color: #ff5c2b;
+  }
+}
+
+.hero-wrapper .my-test-btn {
+  border-color: red;
+  border-radius: 25%;
+  background-color: blue;
+}
+/*# sourceMappingURL=include-media.css.map */

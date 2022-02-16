@@ -206,8 +206,8 @@ body {
   border-radius: 25px;
   border: 3px solid black;
   margin-bottom: 20px;
-  -webkit-box-shadow: 5px 5px 4px 3px black;
-          box-shadow: 5px 5px 4px 3px black;
+  -webkit-box-shadow: 5px 5px 4px 3px #4d4d4d;
+          box-shadow: 5px 5px 4px 3px #4d4d4d;
   /* dodaje senku iza box-a (moze i ka unutra uz inset) */
 }
 
@@ -381,8 +381,8 @@ body {
 .about-wrapper__founders-card img {
   border: 3px solid #ddd7d6;
   border-radius: 50px;
-  -webkit-box-shadow: 5px 5px 4px 3px black;
-          box-shadow: 5px 5px 4px 3px black;
+  -webkit-box-shadow: 5px 5px 4px 3px #4d4d4d;
+          box-shadow: 5px 5px 4px 3px #4d4d4d;
 }
 
 @media (max-width: 768px) {

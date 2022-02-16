@@ -39,8 +39,8 @@ body {
   }
   .team-wrapper__teacher-img img {
     width: 100%;
-    -webkit-box-shadow: 5px 5px 4px 3px black;
-            box-shadow: 5px 5px 4px 3px black;
+    -webkit-box-shadow: 5px 5px 4px 3px #4d4d4d;
+            box-shadow: 5px 5px 4px 3px #4d4d4d;
   }
   .team-wrapper__teacher-about h1,
   .team-wrapper__teacher-about h3 {
@@ -110,8 +110,8 @@ body {
     width: 100%;
     max-width: 500px;
     max-height: 450px;
-    -webkit-box-shadow: 5px 5px 4px 3px black;
-            box-shadow: 5px 5px 4px 3px black;
+    -webkit-box-shadow: 5px 5px 4px 3px #4d4d4d;
+            box-shadow: 5px 5px 4px 3px #4d4d4d;
   }
   .team-wrapper__teacher-about {
     width: 40%;

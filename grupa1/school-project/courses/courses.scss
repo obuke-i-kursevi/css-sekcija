@@ -28,31 +28,7 @@
     }
 }
 
-.courses-wrapper__course {
-    position: relative;
-    z-index: 0;
-    border: $cardBorder;
-    width: 50%;
-    background: $headerAndFooterBackgroundColor;
-    padding: 25px;
-    margin-bottom: 20px;
-    opacity: 0.85;
-    min-width: 300px; /* definisanje minimalne sirine nekog elementa */
-    min-height: 250px; /* definisanje minimalne visine nekog elementa */
-    @include media('<=tablet') {
-        text-align: center;
-        transform: none;
-        &:hover {
-            transform: none;
-        }
-    }
-}
 
-.courses-wrapper__course:hover {
-    border-color: $cardColor;
-    cursor: pointer;
-    transition: $transitionEaseInOut;
-}
 
 .courses-wrapper__course h1 {
     font-family: $sourceCodePro;
@@ -130,5 +106,31 @@
     @include media('<=desktop') {
         position: static;
         text-align: center;
+    }
+}
+
+.courses-wrapper__course {
+    position: relative;
+    z-index: 0;
+    border: $cardBorder;
+    width: 50%;
+    background: $headerAndFooterBackgroundColor;
+    padding: 25px;
+    margin-bottom: 20px;
+    opacity: 0.85;
+    min-width: 300px; /* definisanje minimalne sirine nekog elementa */
+    min-height: 250px; /* definisanje minimalne visine nekog elementa */
+    &:hover {
+        border-color: $cardColor;
+        cursor: pointer;
+        transition: $transitionEaseInOut;
+    }
+    @include media('<=tablet') {
+        text-align: center;
+        transform: none;
+        transition: none;
+        &:hover {
+            transform: none;
+        }
     }
 }

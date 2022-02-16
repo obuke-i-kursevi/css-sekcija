@@ -1,0 +1,27 @@
+p {
+    color: red;
+}
+
+/* PSEUDO ELEMENT */
+p::first-line {
+    color: blue;
+}
+
+p::first-letter {
+    color: orange;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+p::before {
+    content: "☺";
+}
+
+p::after {
+    content: "✅";
+}
+
+/* PSEUDO KLASA */
+/* p:hover {
+    color: green;
+} */

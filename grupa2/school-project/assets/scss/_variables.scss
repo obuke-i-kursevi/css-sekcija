@@ -9,4 +9,4 @@ $sourceCodePro: 'Source Code Pro', monospace;
 $textShadowBlack: 3px 3px 3px black;
 $textShadowLight: 3px 3px 3px #e9baab;
 $boxShadowLight: 3px 3px 3px 3px #e9baab;
-$boxShadowDark: 5px 5px 4px 3px black;
+$boxShadowDark: 5px 5px 4px 3px lighten(black, 30%);

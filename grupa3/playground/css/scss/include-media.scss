@@ -1,0 +1,45 @@
+@import 'variables';
+@import 'breakpoints';
+@import 'mixins';
+
+.hero-wrapper {
+    height: 50vh;
+    background-color: $mainTitleColor;
+    @include flexMixin(center, wrap);
+
+    @include media('<=phone') {
+        background-color: $subTitleColor;
+        h1::before {
+            content: '(watching on mobile phone) '
+        }
+    }
+
+    @include media('>phone', '<=tablet') {
+        background-color: lighten($mainTitleColor, 20%);
+        h1::after {
+            content: ' (watching on mobile/tablet device)'
+        }
+    }
+
+    @include media('>desktop') {
+        background-color: darken($mainTitleColor, 10%);
+    }
+
+    @include media('>smartTV') { // 2500px
+        background-color: lighten($subTitleColor, 15%);
+    }
+
+    .my-test-btn {
+        border-color: red;
+        border-radius: 25%;
+        background-color: blue;
+    }
+
+}
+
+// ! Ovako smo pre radili, nije pogresan pristup, ali postoji kraci pristup naveden gore
+// @media screen and (max-width: 320px) {
+//     .hero-wrapper {
+//         background-color: red;
+//     }
+// }

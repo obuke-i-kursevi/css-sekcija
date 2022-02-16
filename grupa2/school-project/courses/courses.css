@@ -37,40 +37,6 @@
   }
 }
 
-.courses-wrapper__course {
-  position: relative;
-  z-index: 0;
-  border: 5px solid #ef9273;
-  width: 50%;
-  background: #fef9f8;
-  padding: 25px;
-  margin-bottom: 20px;
-  opacity: 0.85;
-  min-width: 300px;
-  /* definisanje minimalne sirine nekog elementa */
-  min-height: 250px;
-  /* definisanje minimalne visine nekog elementa */
-}
-
-@media (max-width: 768px) {
-  .courses-wrapper__course {
-    text-align: center;
-    -webkit-transform: none;
-            transform: none;
-  }
-  .courses-wrapper__course:hover {
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-.courses-wrapper__course:hover {
-  border-color: #e9baab;
-  cursor: pointer;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
 .courses-wrapper__course h1 {
   font-family: "Source Code Pro", monospace;
   letter-spacing: 3px;
@@ -175,6 +141,42 @@
   .advanced-course .recommended {
     position: static;
     text-align: center;
+  }
+}
+
+.courses-wrapper__course {
+  position: relative;
+  z-index: 0;
+  border: 5px solid #ef9273;
+  width: 50%;
+  background: #fef9f8;
+  padding: 25px;
+  margin-bottom: 20px;
+  opacity: 0.85;
+  min-width: 300px;
+  /* definisanje minimalne sirine nekog elementa */
+  min-height: 250px;
+  /* definisanje minimalne visine nekog elementa */
+}
+
+.courses-wrapper__course:hover {
+  border-color: #e9baab;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .courses-wrapper__course {
+    text-align: center;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .courses-wrapper__course:hover {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 /*# sourceMappingURL=courses.css.map */
