@@ -1,6 +1,7 @@
 @import url("../styles.css");
 .courses-wrapper {
   padding: 50px;
+  padding-top: 100px;
   margin: 0;
   width: 100%;
   background-image: url("../assets/images/courses-image.jpg");

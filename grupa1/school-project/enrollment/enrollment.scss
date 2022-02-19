@@ -101,6 +101,30 @@ input:focus{
     outline: none;
 }
 
+.form-info {
+    position: absolute;
+    z-index: 10;
+    padding: 25px;
+    width: 35%;
+    top: 25%;
+    left: 32.5%;
+    background-color: $cardColorDarken;
+    border: $blackBorder;
+    @include media('<=phone') {
+        margin: 0 auto;
+        width: 80%;
+        left: 8%;
+    }
+}
+
+.form-info p {
+    font: {
+        family: $courierPrime;
+        size: 20px;
+        color: $cardColorDarken;
+    }
+}
+
 @media screen and (max-width: 425px) {
     .form-wrapper__form {
         width: 80%;

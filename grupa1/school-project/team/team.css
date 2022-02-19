@@ -67,6 +67,19 @@ body {
   }
 }
 
+@media (max-width: 420px) {
+  .team-title-wrapper {
+    /* text-align: center; */
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (min-width: 769px) {
   .team-title-wrapper {
     /* text-align: center; */

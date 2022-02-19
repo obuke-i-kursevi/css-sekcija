@@ -122,6 +122,31 @@ input:focus {
   outline: none;
 }
 
+.form-info {
+  position: absolute;
+  z-index: 10;
+  padding: 25px;
+  width: 35%;
+  top: 25%;
+  left: 32.5%;
+  background-color: #eb9a7f;
+  border: 1px solid black;
+}
+
+@media (max-width: 420px) {
+  .form-info {
+    margin: 0 auto;
+    width: 80%;
+    left: 8%;
+  }
+}
+
+.form-info p {
+  font-family: "Courier Prime", monospace;
+  font-size: 20px;
+  font-color: #eb9a7f;
+}
+
 @media screen and (max-width: 425px) {
   .form-wrapper__form {
     width: 80%;

@@ -12,6 +12,7 @@ body {
         #e9baab
     );
 }
+ 
 
 @include media('<=tablet') {
     .team-title-wrapper {
@@ -61,6 +62,15 @@ body {
     .form-wrapper__form h3 {
         color: black;
         text-shadow: $textShadowLight;
+    }
+}
+
+@include media('<=phone') {
+    .team-title-wrapper {
+        /* text-align: center; */
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
     }
 }
 
