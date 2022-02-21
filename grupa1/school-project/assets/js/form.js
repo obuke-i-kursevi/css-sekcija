@@ -29,6 +29,11 @@ form.addEventListener('submit', (event) => {
 
     showPopup(fName,lName,email,option,message);
 
+    // * uklanja poruku prikazanu u dijalogu nakon 3 sekunde
+    // setTimeout(() => {
+    //     formInfo.remove();
+    // }, 3000);
+
     form.reset();
 
 });
