@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="enrollment.css" />
+    <script src="../assets/js/enrollment-form.js" defer></script>
+    <script src="../assets/js/vendor.js" defer></script>
+    <script src="../assets/js/app.js" defer></script>
     <title>Enrollment</title>
   </head>
   <body>
@@ -29,16 +32,45 @@
         </ul>
       </nav>
     </header>
+
+    <!-- ! Mobile Header -->
+    <header class="mobile-header">
+      <div class="mobile-header__bar-1"></div>
+      <div class="mobile-header__bar-2"></div>
+      <div class="mobile-header__bar-3"></div>
+      <section class="header-content not-visible">
+          <a href="../index.html" class="header-content__item">
+              Home
+          </a>
+          <a href="../courses/index.html" class="header-content__item">
+              Courses
+          </a>
+          <a href="../team/index.html" class="header-content__item">
+              Our Team
+          </a>
+          <a href="index.html" class="header-content__item">
+              Enrollment
+          </a>
+      </section>
+    </header>
+
+  <div class="backdrop-wrapper">
+  </div>
+
+    <div class="form-info not-visible">
+      <button class="btn-close">X</button>
+    </div>
+
     <!-- ! Form -->
     <div class="form-wrapper">
       <form class="form-wrapper__form" name="enrollment-form">
         <h3>Enroll for one of our courses</h3>
         <label for="firstName"> First Name </label>
-        <input type="text" />
+        <input placeholder="Your first name" type="text" />
         <label for="lastName"> Last Name </label>
-        <input type="text" />
+        <input placeholder="Your last name" type="text" />
         <label for="email"> Email </label>
-        <input type="email" />
+        <input placeholder="Your email" type="email" />
         <label for="courseCbx"> Choose course </label>
         <select name="courseCbx" id="courseCbx">
           <option value="basic">Basic</option>
